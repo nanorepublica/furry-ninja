@@ -1,0 +1,169 @@
+/* #Reset & Basics (Inspired by E. Meyers) from Skeleton
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		/*font-size: 100%;*/
+		/*font: inherit;*/
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+body {
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#overlay {
+	border: 2px solid black;
+	border-right: 50px solid black;
+	margin: 0;
+	margin-top: 25px;
+	left: -402px;
+	width: 400px;
+	position: fixed;
+	background-color: white;
+	height: 600px;
+	-webkit-transition: all 2s ease;
+	-webkit-animation-name: slidein;
+}
+
+#overlay:target {
+	-webkit-transform:translate(400px, 0px);
+}
+
+#overlay h1 {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	top: 130px;
+	left:295px;
+}
+
+.rotate90 {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+#overlay h1 a {
+	color: white;
+	text-decoration: none;
+}
+
+.open_close_text {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	bottom: -500px;
+	left: 111px;
+	color: white;
+	display: inline-block;
+	float: none;
+}
+
+.open_close_text a {
+	color: white;
+	text-decoration: none;
+}
+
+#chart {
+	/*background-color: blue;*/
+	margin: 10px;
+	height: 650px;
+}
+
+h3 {
+	margin-right: 20px;
+	margin-top: -25px;
+	float: right;
+}
+
+#tablinks {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+/* custom scrollbars for metric tabs*/
+/*#tablinks:before {
+	content: '<'
+}
+
+#tablinks:after {
+	content: '>'
+}*/
+
+.tablink, #new_metric {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	background-color: rgba(0,0,0,0.9);
+	margin-right: 1px;
+	border: 1px solid rgba(0,0,0,0.9);
+	border-bottom: 2px solid rgba(0,0,0,1);
+	margin-bottom: -2px;
+	padding: 4px 6px;
+	color: white;
+	cursor:pointer;
+
+}
+
+.tablactive {
+	background-color: rgba(255,255,255,1);
+	border-bottom: 2px solid rgba(255,255,255,1);
+	color: black;
+}
+
+.tab {
+	display: none;
+}
+
+.tabactive {
+	border-top: 2px solid rgba(0,0,0,1);
+	display: block;
+}
+
+.tabactive ul {
+	line-height: 1.5;
+}
+
+.tabactive label:after {
+	content: ':';
+}
+
+.tabactive fieldset {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+#tag_ul {
+	margin-top: 5px;
+	margin-left: 10px;
+}

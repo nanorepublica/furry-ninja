@@ -1,0 +1,53 @@
+<html>
+<head><title>OpenTSDB Dash</title></head>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/static/css/skeleton/base.css"/> -->
+<link rel="stylesheet" type="text/css" href="/static/css/skeleton/skeleton.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/skeleton/layout.css"/>
+<body>
+<div id="container" >
+	<div id="overlay">
+		<h1 class="rotate90"><a href="#overlay">OpenTSDB Dash</a></h1>
+			<h3 class="rotate90 open_close_text">
+				<a href="#overlay" id="open_controls">open</a> &frasl;
+				<a href="#" id="close_controls">close</a>
+			</h3>
+		<h3>Metrics</h3>
+		<ul id="tablinks">
+			<li id='new_metric'>+</li>
+		</ul>
+			<div id="tabs">
+				<div class="tab tabactive" id='new_metric_div'>
+<!-- 						<form id="metrics_form" >
+							<fieldset>
+								<ul>
+									<li><label>Metric</label><input id="metric_name_in" /><br /></li>
+									<li><label>Tags</label>
+										<ul id="tag_ul" >
+											<li class="tag_li"><label><select></select></label><input type="text" /></li>
+
+										</ul></li>
+
+								</ul>
+							</fieldset>
+						</form> -->
+				</div>
+			</div>
+ 	</div>
+	<div id="chart">
+	</div>
+</div>
+
+</body>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="/static/js/d3.v3.min.js"></script>
+<!-- <script src="/static/coffee/metric.js"></script> -->
+<!-- <script src="/static/coffee/transfer.js"></script> -->
+<!-- <script src="/static/coffee/display.js"></script> -->
+<!-- <script src="/static/coffee/controls.js"></script> -->
+<script src="/static/coffee/main.js"></script> 
+</html>
+
+
+<!-- Open Time Series DataBase Coffee(script) Metrics -->
+<!-- Times Coffee Dash -->
